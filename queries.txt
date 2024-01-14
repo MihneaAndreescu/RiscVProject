@@ -1,0 +1,3 @@
+query memory float 0
+query memory float 4
+query memory float 8
