@@ -28,6 +28,36 @@
     <Filter Include="Source Files\MemoryManager">
       <UniqueIdentifier>{72718798-9ec0-4d4c-b6ff-63ca77a4c1be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Task0">
+      <UniqueIdentifier>{54dc5bf1-bc1d-46af-92c9-02e2236a406b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task1">
+      <UniqueIdentifier>{a02dd973-9583-42b1-8403-3949f8464fe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task2">
+      <UniqueIdentifier>{8640d9b4-34eb-4683-bc0c-6dde68e7035a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task3">
+      <UniqueIdentifier>{a1a15339-3065-4b08-a056-6f47e6f06d56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task4">
+      <UniqueIdentifier>{236d5780-b38a-41f9-883f-ac8cb5256e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task5">
+      <UniqueIdentifier>{82d6e537-03f7-4555-96a2-5b68b03877c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task6">
+      <UniqueIdentifier>{58d27735-5b0e-4952-aca7-143b219b3edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task7">
+      <UniqueIdentifier>{063bda50-2382-4817-8639-04195ada323f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task8">
+      <UniqueIdentifier>{ebc99b61-4e64-4c85-a261-8a1a417459aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Task9">
+      <UniqueIdentifier>{b2e42790-dc6f-43d7-824c-09f6108c5876}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ProiectAscEchipaToataLuminaPeCareNuOPutemVedea.cpp">
@@ -50,9 +80,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="code.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
     <Text Include="operation_frequencies.txt">
       <Filter>Resource Files</Filter>
     </Text>
@@ -67,6 +94,63 @@
     </Text>
     <Text Include="queries.txt">
       <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="code0.txt">
+      <Filter>Resource Files\Task0</Filter>
+    </Text>
+    <Text Include="query1.txt">
+      <Filter>Resource Files\Task1</Filter>
+    </Text>
+    <Text Include="code1.txt">
+      <Filter>Resource Files\Task1</Filter>
+    </Text>
+    <Text Include="code2.txt">
+      <Filter>Resource Files\Task2</Filter>
+    </Text>
+    <Text Include="query2.txt">
+      <Filter>Resource Files\Task2</Filter>
+    </Text>
+    <Text Include="code3.txt">
+      <Filter>Resource Files\Task3</Filter>
+    </Text>
+    <Text Include="query3.txt">
+      <Filter>Resource Files\Task3</Filter>
+    </Text>
+    <Text Include="code4.txt">
+      <Filter>Resource Files\Task4</Filter>
+    </Text>
+    <Text Include="query4.txt">
+      <Filter>Resource Files\Task4</Filter>
+    </Text>
+    <Text Include="code5.txt">
+      <Filter>Resource Files\Task5</Filter>
+    </Text>
+    <Text Include="query5.txt">
+      <Filter>Resource Files\Task5</Filter>
+    </Text>
+    <Text Include="code6.txt">
+      <Filter>Resource Files\Task6</Filter>
+    </Text>
+    <Text Include="query6.txt">
+      <Filter>Resource Files\Task6</Filter>
+    </Text>
+    <Text Include="code7.txt">
+      <Filter>Resource Files\Task7</Filter>
+    </Text>
+    <Text Include="query7.txt">
+      <Filter>Resource Files\Task7</Filter>
+    </Text>
+    <Text Include="code8.txt">
+      <Filter>Resource Files\Task8</Filter>
+    </Text>
+    <Text Include="query8.txt">
+      <Filter>Resource Files\Task8</Filter>
+    </Text>
+    <Text Include="code9.txt">
+      <Filter>Resource Files\Task9</Filter>
+    </Text>
+    <Text Include="query9.txt">
+      <Filter>Resource Files\Task9</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
@@ -87,11 +171,68 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="memory.in">
-      <Filter>Resource Files</Filter>
+    <None Include="memory0.in">
+      <Filter>Resource Files\Task0</Filter>
     </None>
-    <None Include="memory.out">
-      <Filter>Resource Files</Filter>
+    <None Include="query0.txt">
+      <Filter>Resource Files\Task0</Filter>
+    </None>
+    <None Include="bin0.bin">
+      <Filter>Resource Files\Task0</Filter>
+    </None>
+    <None Include="bin1.bin">
+      <Filter>Resource Files\Task1</Filter>
+    </None>
+    <None Include="memory1.in">
+      <Filter>Resource Files\Task1</Filter>
+    </None>
+    <None Include="bin2.bin">
+      <Filter>Resource Files\Task2</Filter>
+    </None>
+    <None Include="memory2.in">
+      <Filter>Resource Files\Task2</Filter>
+    </None>
+    <None Include="bin3.bin">
+      <Filter>Resource Files\Task3</Filter>
+    </None>
+    <None Include="memory3.in">
+      <Filter>Resource Files\Task3</Filter>
+    </None>
+    <None Include="bin4.bin">
+      <Filter>Resource Files\Task4</Filter>
+    </None>
+    <None Include="memory4.in">
+      <Filter>Resource Files\Task4</Filter>
+    </None>
+    <None Include="bin5.bin">
+      <Filter>Resource Files\Task5</Filter>
+    </None>
+    <None Include="memory5.in">
+      <Filter>Resource Files\Task5</Filter>
+    </None>
+    <None Include="bin6.bin">
+      <Filter>Resource Files\Task6</Filter>
+    </None>
+    <None Include="memory6.in">
+      <Filter>Resource Files\Task6</Filter>
+    </None>
+    <None Include="bin7.bin">
+      <Filter>Resource Files\Task7</Filter>
+    </None>
+    <None Include="memory7.in">
+      <Filter>Resource Files\Task7</Filter>
+    </None>
+    <None Include="bin8.bin">
+      <Filter>Resource Files\Task8</Filter>
+    </None>
+    <None Include="memory8.in">
+      <Filter>Resource Files\Task8</Filter>
+    </None>
+    <None Include="bin9.bin">
+      <Filter>Resource Files\Task9</Filter>
+    </None>
+    <None Include="memory9.in">
+      <Filter>Resource Files\Task9</Filter>
     </None>
   </ItemGroup>
 </Project>

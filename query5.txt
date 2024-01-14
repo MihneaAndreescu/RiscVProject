@@ -1,0 +1,5 @@
+query memory longlong 70
+query memory longlong 78
+query memory longlong 86
+query memory longlong 94
+query memory longlong 102

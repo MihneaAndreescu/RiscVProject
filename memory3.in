@@ -1,0 +1,7 @@
+reg int a0 7
+
+reg int sp 1000
+memory char 7 a
+memory char 8 b
+memory char 9 c
+memory char 10 d

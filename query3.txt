@@ -1,0 +1,9 @@
+query reg int a0
+
+query memory char 7
+query memory char 8
+query memory char 9
+query memory char 10
+
+query reg int sp
+

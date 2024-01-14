@@ -183,7 +183,7 @@ memory double 33 111.33
 
 */
 vector<float> ret;
-void initMemory() {
+void initMemory(string memoryFilename) {
 	for (auto& intRegister : getIntRegisters()) {
 		intRegisters[intRegister] = 0;
 	}
@@ -205,26 +205,29 @@ void initMemory() {
 		# ft0 = d
 		# Row for loop
 */
-	loadMemoryFromFile("memory.in");
-	vector<float> vec = { 3, 2, -5.77 };
-	vector<vector<float>> matrix = { {3.3, 1.1, 4.44}, {5.7, 1.333333, 0}, {55, 13, 66} };
-	ret = { 0, 0, 0 };
-	for (int r = 0; r < 3; r++) {
-		for (int c = 0; c < 3; c++) {
-			ret[r] += matrix[r][c] * vec[c];
-		}
-	}
-	for (int i = 0; i < 3; i++) {
-		cout << i << " : " << ret[i] << "\n";
-	}
+	
+
+	loadMemoryFromFile(memoryFilename);
+
+	//vector<float> vec = { 3, 2, -5.77 };
+	//vector<vector<float>> matrix = { {3.3, 1.1, 4.44}, {5.7, 1.333333, 0}, {55, 13, 66} };
+	//ret = { 0, 0, 0 };
+	//for (int r = 0; r < 3; r++) {
+	//	for (int c = 0; c < 3; c++) {
+	//		ret[r] += matrix[r][c] * vec[c];
+	//	}
+	//}
+	//for (int i = 0; i < 3; i++) {
+	//	cout << i << " : " << ret[i] << "\n";
+	//}
 	// end of defining memory
 }
 void printMemory(int l, int r) {
 	// special for matrixmul
-	cout << "special for matmul\n";
-	for (int i = 0; i < 3; i++) {
-		cout << i << " : " << ret[i] << "\n";
-	}
+	//cout << "special for matmul\n";
+	//for (int i = 0; i < 3; i++) {
+	//	cout << i << " : " << ret[i] << "\n";
+	//}
 	// special for matrix mul
 	for (int i = l; i <= r; i++) {
 		unsigned char byte = getMemoryByte(i);

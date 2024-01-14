@@ -1,0 +1,14 @@
+reg int a0 70
+reg int a1 100
+reg int a2 5
+
+memory char 100 a
+memory char 101 b
+memory char 102 c
+
+
+memory char 70 u
+memory char 71 u
+memory char 72 u
+memory char 73 u
+memory char 74 u

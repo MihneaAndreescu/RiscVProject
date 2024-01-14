@@ -1,3 +1,4 @@
 #pragma once
 #include <vector>
-void executeInner(std::vector<bool> code);
+#include <string>
+void execute(std::vector<bool> code, std::string queriesfileame, bool watchRegisters, bool printPath);

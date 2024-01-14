@@ -1,0 +1,8 @@
+query memory char 70
+query memory char 71
+query memory char 72
+query memory char 73
+query memory char 74
+
+query memory byte 73
+query memory byte 74

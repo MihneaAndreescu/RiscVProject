@@ -1,0 +1,2 @@
+query reg float ft0
+query reg float ft1

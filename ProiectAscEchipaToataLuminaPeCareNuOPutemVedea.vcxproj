@@ -149,12 +149,30 @@
     <ClCompile Include="ProiectAscEchipaToataLuminaPeCareNuOPutemVedea.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="code.txt" />
+    <Text Include="code1.txt" />
+    <Text Include="code2.txt" />
+    <Text Include="code3.txt" />
+    <Text Include="code4.txt" />
+    <Text Include="code5.txt" />
+    <Text Include="code6.txt" />
+    <Text Include="code7.txt" />
+    <Text Include="code8.txt" />
+    <Text Include="code9.txt" />
+    <Text Include="query8.txt" />
     <Text Include="operations.txt" />
     <Text Include="operation_frequencies.txt" />
     <Text Include="queries.txt" />
+    <Text Include="query1.txt" />
+    <Text Include="query2.txt" />
+    <Text Include="query3.txt" />
+    <Text Include="query4.txt" />
+    <Text Include="query5.txt" />
+    <Text Include="query6.txt" />
+    <Text Include="query7.txt" />
+    <Text Include="query9.txt" />
     <Text Include="registers.txt" />
     <Text Include="register_frequencies.txt" />
+    <Text Include="code0.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bijections.h" />
@@ -164,8 +182,27 @@
     <ClInclude Include="MemoryManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="memory.in" />
-    <None Include="memory.out" />
+    <None Include="bin0.bin" />
+    <None Include="bin1.bin" />
+    <None Include="bin2.bin" />
+    <None Include="bin3.bin" />
+    <None Include="bin4.bin" />
+    <None Include="bin5.bin" />
+    <None Include="bin6.bin" />
+    <None Include="bin7.bin" />
+    <None Include="bin8.bin" />
+    <None Include="bin9.bin" />
+    <None Include="memory0.in" />
+    <None Include="memory1.in" />
+    <None Include="memory2.in" />
+    <None Include="memory3.in" />
+    <None Include="memory4.in" />
+    <None Include="memory5.in" />
+    <None Include="memory6.in" />
+    <None Include="memory7.in" />
+    <None Include="memory8.in" />
+    <None Include="memory9.in" />
+    <None Include="query0.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

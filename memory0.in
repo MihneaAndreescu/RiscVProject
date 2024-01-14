@@ -1,0 +1,5 @@
+reg int a0 7
+memory char 7 w
+memory char 8 o
+memory char 9 r
+memory char 10 d

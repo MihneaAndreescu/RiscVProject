@@ -419,7 +419,7 @@ vector<bool> encode(string filename) {
 		assert(0);
 		break;
 	}
-	cout << "finished encoding!\n";
+	//cout << "finished encoding!\n";
 	return code;
 }
 string processfilecontent(string s) {

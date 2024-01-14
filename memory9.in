@@ -1,0 +1,18 @@
+reg int a0 200
+reg int a1 70
+reg int a2 10
+
+memory float 70 0
+memory float 74 1.4
+memory float 78 2
+memory float 82 3.111
+memory float 86 4
+memory float 90 5
+memory float 94 6
+memory float 98 7
+memory float 102 8
+memory float 106 9
+
+memory float 10 1.23
+memory float 14 2
+memory float 18 3

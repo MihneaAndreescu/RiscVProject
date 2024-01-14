@@ -1,0 +1,7 @@
+reg int a0 100
+reg int a1 20
+
+memory double 100 5
+memory double 108 6
+memory double 20 8
+memory double 28 11

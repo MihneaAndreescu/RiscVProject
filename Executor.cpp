@@ -217,7 +217,7 @@ public:
 			print();
 		}
 		if (callStack.empty()) {
-			cout << "program over\n";
+			//cout << "program over\n";
 			programEnd = 1;
 			return;
 		}
@@ -822,12 +822,21 @@ void answerQueries(string filename) {
 	}
 	file.close();
 }
-void executeInner(vector<bool> code) {
-	cout << "dimension = " << (int)code.size() << "\n";
-	for (auto b : code) {
-		cout << b << " ";
+void execute(vector<bool> code, string queriesfilename, bool watchRegisters, bool printPath) {
+	if (watchRegisters) {
+		cout << "dimension = " << (int)code.size() << "\n";
+		for (auto b : code) {
+			cout << b << " ";
+		}
+		cout << "\n";
 	}
-	cout << "\n";
+	if (!watchRegisters) {
+		watchFloatRegisters = 0;
+		watchIntRegisters = 0;
+	}
+	if (!printPath) {
+		logWay = 0;
+	}
 	int ptr = 0;
 	function<string()> readOperation = [&]() {
 		string currentOperation;
@@ -1154,30 +1163,36 @@ void executeInner(vector<bool> code) {
 		}
 	}
 	assert(posMain != -1);
-	cout << "----------------------------------------------------------\n";
-	cout << "posMain = " << posMain << "\n";
-	cout << "finished unpacking the code\n";
-	int lineId = -1;
-	for (auto& operation : operations) {
-		lineId++;
-		if (lineId < 10) {
-			cout << " ";
+	if (watchRegisters) {
+		cout << "----------------------------------------------------------\n";
+		cout << "posMain = " << posMain << "\n";
+		cout << "finished unpacking the code\n";
+		int lineId = -1;
+		for (auto& operation : operations) {
+			lineId++;
+			if (lineId < 10) {
+				cout << " ";
+			}
+			if (lineId < 100) {
+				cout << " ";
+			}
+			if (lineId < 1000) {
+				cout << " ";
+			}
+			cout << lineId << " ---> ";
+			operation->print();
 		}
-		if (lineId < 100) {
-			cout << " ";
-		}
-		if (lineId < 1000) {
-			cout << " ";
-		}
-		cout << lineId << " ---> ";
-		operation->print();
+		cout << "----------------------------------------------------------\n";
 	}
-	cout << "----------------------------------------------------------\n";
 	vector<int> callStack;
+	if (printPath) {
+		cout << "here is an oveview of the operation you have visited in order:\n";
+	}
 	while (!programEnd) {
 		executeStep(operations, callStack, posMain);
 	}
-	answerQueries("queries.txt");
+	answerQueries(queriesfilename);
+	exit(0);
 	printMemory(0, 0);
 	exit(0);
 	cout << "special for matmul finitos\n";
@@ -1192,3 +1207,6 @@ void executeInner(vector<bool> code) {
 	}
 	exit(0);
 }
+
+
+

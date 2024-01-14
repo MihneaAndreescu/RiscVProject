@@ -123,10 +123,10 @@ vector<string> getIntRegisters() {
 	return intRegisters;
 }
 vector<string> getFloatRegisters() {
-	cout << "the ones : ";
-	for (auto& rr : floatRegisters) {
-		cout << rr << " ";
-	}
-	cout << "\n";
+	//cout << "the ones : ";
+	//for (auto& rr : floatRegisters) {
+	//	cout << rr << " ";
+	//}
+	//cout << "\n";
 	return floatRegisters;
 }

@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <set>
-void initMemory();
+void initMemory(std::string memoryFilename);
 void setIntRegister(std::string reg, int value);
 void setFloatRegister(std::string reg, float value);
 int getIntRegister(std::string reg);

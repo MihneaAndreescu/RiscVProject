@@ -1,0 +1,6 @@
+reg int a0 100
+memory int 100 7
+memory int 104 3
+memory int 108 1
+memory int 112 2
+reg int a1 4

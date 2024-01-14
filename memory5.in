@@ -1,0 +1,8 @@
+reg longlong a0 70
+reg int a1 5
+
+memory longlong 70 11
+memory longlong 78 1054
+memory longlong 86 32
+memory longlong 94 10424
+memory longlong 102 15
