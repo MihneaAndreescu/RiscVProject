@@ -13,9 +13,7 @@ bin.bin -> unde va fi calculat binarul
 code.txt -> unde va fi codul. Pentru fiecare exemplu trebuie adaugata o secventa de genul:
 
 main:
-    
     call strlen
-    
     ret
     
 pentru ca programul sa stie ce functie sa apeleze prima!
