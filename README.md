@@ -1,3 +1,5 @@
+Atentie!! Sistemul utilizeaza notatia little endian!
+
 Atentie!! atunci cand este folosit sp acesta trebuie setat la o pozitie mare intre 0 si 8 * 1024!!
 
 Atentie!! este necesar ca proiectul sa fie rulat in Debug datorita anumitor functii de genul assert(func(ptr++))!
