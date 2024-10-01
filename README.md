@@ -1,40 +1,28 @@
-Atentie!! Sistemul utilizeaza notatia little endian!
+# RISC-V Assembler and Executor
 
-Atentie!! atunci cand este folosit sp acesta trebuie setat la o pozitie mare intre 0 si 8 * 1024!!
+Welcome to the RISC-V Assembler and Executor project. This system is designed to convert RISC-V assembly code into binary format and execute the binary files, simulating a RISC-V processor environment.
 
-Atentie!! este necesar ca proiectul sa fie rulat in Debug datorita anumitor functii de genul assert(func(ptr++))!
+## Project Overview
 
-ProiectAscEchipaToataLuminaPeCareNuOPutemVedea.cpp este fisierul care controleaza toata magia!
+This project is part of the "Architecture of Computing Systems" course and is aimed at demonstrating the capabilities of an assembler and executor for the RISC-V instruction set architecture. It includes features that allow users to simulate the execution of RISC-V code and query the state of memory and registers dynamically.
 
-Doar trebuie modificata variabila taskid cu exemplul aferent!
+## Features
 
-Se recomanda folosirea watchRegisters, printPath pentru o experienta inedita!
+- **RISC-V Assembler**: Converts RISC-V assembly code into binary format.
+- **RISC-V Executor**: Executes binary files and simulates a RISC-V processor environment.
+- **Memory and Register Query**: Allows querying of memory and register states at any point during the execution.
+- **Complex Instruction Handling**: Supports a wide range of RISC-V instructions and complex execution scenarios.
 
-Actual si encodarea si decodarea se face in acelasi timp, dar functiile sunt interactive si pot fi utilizate separat!
+## Photos
 
-Pentru fiecare exemplu avem:
+The following images demonstrate the assembler and executor in action, showcasing the system's ability to handle complex instructions and queries.
 
-bin.bin -> unde va fi calculat binarul
+![RISC-V Assembler in action](https://github.com/MihneaAndreescu/RiscVProject/blob/main/373C39C6-B205-46AC-B791-60E1C75BAAD7.png)
 
-code.txt -> unde va fi codul. Pentru fiecare exemplu trebuie adaugata o secventa de genul:
+![Querying Registers](https://github.com/MihneaAndreescu/RiscVProject/blob/main/3866BE87-EB6D-4D2F-B659-5C484D276AA9.png)
 
-main:
-    call strlen
-    ret
-    
-pentru ca programul sa stie ce functie sa apeleze prima!
+![Executor Running](https://github.com/MihneaAndreescu/RiscVProject/blob/main/954C4AC8-F696-4A8C-A8BE-E92EF8D7DA1D.png)
 
-"Add Element to Singly Linked List" functioneaza si aceasta, dar a fost sarita in exemple, deoarece este lasat la latitudinea dvs sa va creati propria dvs lista.
+![Detailed Memory Query](https://github.com/MihneaAndreescu/RiscVProject/blob/main/E2ADDA72-01B1-4AD2-8445-219FC14A070F.png)
 
-la "Reverse a string" este nevoie sa se adauge si functia strlen, dar acest lucru a fost facut deja. de asemenea, in exemplul lor # s1 = str este gresit, ar trb sa fie # a0 = str. la noi totul este corect!
 
-memory.in -> 
-
-formatul = reg datatype registername value sau memory datatype memorylocation value (memorylocation este reprezentat in bytes deci daca avem un vector de int atunci elementele vor fi pozitionate la distana de 4 bytes)
-exemple:
-reg int a0 100, reg int a1 20, memory double 100 5, memory double 108 6, memory double 20 8, memory double 28 11
-
-query.txt -> 
-formatul = query reg datatype register sau query memory datatype position
-
-programul va va raspunde la intrebarile din fisierul query.txt!
